@@ -18,7 +18,7 @@ All client/server communications made through REST API.
 
  2. Configure the MySQL database
 
- 3. Install PHP dependencies using composer
+ 3. Verify PHP version
 
  4. Create a Client ID for Web application in Google Developpers Console
 
