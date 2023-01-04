@@ -1,0 +1,15 @@
+{
+    "require": {
+        "google/apiclient": "^2.0",
+        "phpmailer/phpmailer": "^6.0",
+        "league/oauth2-google": "^4.0"
+    },
+	"scripts": {
+        "pre-autoload-dump": "Google\\Task\\Composer::cleanup"
+    },
+    "extra": {
+        "google/apiclient-services": [
+            "Gmail"
+        ]
+    }
+}

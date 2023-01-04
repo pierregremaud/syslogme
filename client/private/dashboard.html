@@ -1,0 +1,137 @@
+<!-- 
+=========================================================
+* SysLogMe dashboard.html
+=========================================================
+* Created by pierre.gremaud@bluewin.ch
+* April 2022
+*
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="pierre.gremaud@bluewin.ch">    
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Dashboard</title>
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+            
+        <!-- Custom styles for this template       -->
+        <link rel="stylesheet" type="text/css" href="../assets/css/private_style.css">
+    </head>
+
+    <body> 
+
+        <!-- Sidebar  -->  
+        <nav class="sidebar wb-sidebar" id="sidebar"> 
+
+            <div class="sidebar-header wb-sidebar-header"> 
+                <img src="../assets/img/logo-white-no-bg-extra-small.png" alt="SysLogMe" class="rounded me-auto d-block"/>
+            </div>
+
+            <ul class="components"> 
+                <li class="nav-item" id="dashboardNavItem" style="display: none;">
+                    <a class="nav-link" id="dashboardNavLink" href="./dashboard.html">
+                        <i class="bi bi-house"></i> 
+                        Dashboard
+                    </a> 
+                </li>                 
+                <li class="nav-item" id="contactNavItem" style="display: none;">
+                    <a class="nav-link" id="contactNavLink" href="./contact.html">
+                        <i class="bi bi-shuffle"></i> 
+                        Contact
+                    </a> 
+                </li>
+                <li class="nav-item" id="changePwdNavItem" style="display: none;">
+                    <a class="nav-link" id="changePwdNavLink" href="#" onclick="location.href='./change_password.html';">
+                        <i class="bi bi-eye"></i>
+                        Change Password
+                    </a>
+                </li>
+                <li class="nav-item" id="logoutNavItem" style="display: none;">
+                    <a class="nav-link" id="contactNavLink" href="#" onclick="commonFunction.logout();">
+                        <i class="bi bi-door-open"></i>
+                        Logout
+                    </a>
+                </li>               
+            </ul>
+        </nav> 
+        <!-- End Sidebar  -->
+        
+        <!-- Page Content  -->
+        <div id="content">
+
+            <!-- Navbar  --> 
+            <nav class="navbar wb-navbar navbar-expand-lg navbar-light bg-light">
+
+                <div class="container-fluid">
+    
+                    <button class="sidebar-collapse navbar-toggler ms-auto" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div> 
+                        <p class="navbar-brand mt-3" id="page-name">page-name</p> 
+                    </div>
+
+                    <div class="collapse navbar-collapse">
+
+                        <i class="sidebar-collapse bi bi-arrow-left-circle-fill pr-3" style="font-size: 2.5rem; color:#66615B;"></i>
+                        <i class="sidebar-collapse bi bi-arrow-right-circle-fill pr-3" style="font-size: 2.5rem; color:#66615B;"></i>
+
+                        <ul class="navbar-nav ms-auto">
+                            
+                            <li class="nav-item">
+                                <a class="nav-link wb-nav-link">
+                                    Logged in as :
+                                    <span class="wb-navbar-span" id="navUserName">username</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav> 
+            <!-- End Navbar  -->
+
+            <!-- Begin of Main pannel -->  
+            <div class="container">
+                <div class="row">
+                    <br/>
+                    <div class="col text-center">
+                        <h2>Main page</h2>
+                        <br/>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                    </div> 
+                </div>            
+            </div>
+            <!-- End of Main pannel -->                                    
+
+        </div>
+
+        <!--  Vendor JS Script  -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2/dist/sweetalert2.all.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/localstorage-slim/dist/localstorage-slim.js"></script>  
+
+        <!-- Custom JS -->    
+        <script src="../assets/js/global/common_function.js"></script>
+        <script src="../assets/js/global/server_request.js"></script>
+        <script src="../assets/js/global/client_session.js"></script>          
+        
+        <!-- Custom JS Script -->
+        <script>
+            
+            //redirects if user is not logged
+            commonFunction.checkClientSession();        
+
+            //loads the nav bar
+            commonFunction.loadPrivateNavBar("Dashboard", "dashboardNavItem");         
+        </script>         
+    </body> 
+</html>

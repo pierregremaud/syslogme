@@ -1,0 +1,137 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content="Login System"/>
+        <meta name="author" content="pierre.gremaud@bluewin.ch"/>
+        <title>Login System | Main</title>
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+        <!-- Custom styles for this template -->
+        <link rel="stylesheet" href="../assets/css/public_style.css">
+    </head>
+    <body id="page-top">
+        <!-- Nav -->
+        <nav class="navbar fixed-top navbar-expand-md navbar-light navbar-shrink" id="main-nav"> 
+            <div class="container px-4 px-lg-5">
+                <!-- img source is set by style.css -->
+                <img class="rounded navbar-logo" alt="SysLogMe"/>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> 
+                </button>
+                <div class="collapse navbar-collapse " id="navbar-content"> 
+                    <ul class="fw-bold ms-auto my-2 my-lg-0 navbar-nav"> 
+                        <li class="nav-item"><a class="fs-5 nav-link px-lg-3 py-lg-4" aria-current="page" href="#">Home</a>
+                        </li>                         
+                        <li class="nav-item"> <a class="fs-5 nav-link px-lg-3 py-lg-4" href="../login/register_user.html">Register</a> 
+                        </li>                         
+                        <li class="nav-item"> <a class="active fs-5 nav-link px-lg-3 py-lg-4" href="../login/login.html">Login</a> 
+                        </li>                         
+                    </ul>                     
+                </div>
+            </div>             
+        </nav>
+        <!-- Landing -->
+        <header class="wb-header" style="background-image:url('../assets/img/header-bg.jpg');" data-pg-name="Landing">
+            <div class="container h-100 px-4 px-lg-5">
+                <div class="row pt-5">
+                    <div class="col-md-7 pb-5 pt-5">
+                        <h1 class="display-2 fw-bold mb-3 text-dark">Login System</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Contact -->         
+        <section data-pg-name="Contact" class="bg-light mt-5" id="contact">
+            <div class="container"> 
+                <div class="row"> 
+
+                    <div class="col-md-12">
+
+                        <div class="card h-100 mt-md-5 text-dark">
+
+                            <div class="card-body">
+
+                                <div class="card-title"> 
+                                    <h4>Contact us</h4>
+                                    <a>Use this form to send us an email</a> 
+                                </div>
+
+                                <form class="row g-2 needs-validation" id="form" autocomplete="off" novalidate> 
+
+                                    <div class="col-12"> 
+                                        <label class="form-label wb-form-label" for="sender-name"><strong>Enter your full name</strong> (required)</label>                                 
+                                        <input class="form-control" id="sender-name" type="text" minlength="3" required/> 
+                                        <div class="invalid-feedback"> 
+                                            invalid name
+                                        </div>  
+                                    </div>
+
+                                    <div class="col-12"> 
+                                        <label class="form-label wb-form-label"  for="sender-email"><strong>Your email address</strong> (required)</label>                                 
+                                        <input class="form-control" id="sender-email" type="email" minlength="5" required/> 
+                                        <div class="invalid-feedback"> 
+                                            invalid email
+                                        </div>                                 
+                                    </div>
+
+                                    <div class="col-12"> 
+                                        <label class="form-label wb-form-label" for="message-content"><strong>Content</strong> (required)</label>                                 
+                                        <textarea class="form-control" id="message-content" rows="10" minlength="5" style="height:auto;" required></textarea><br/> 
+
+                                        <div class="g-recaptcha" data-callback="recaptcha_callback" data-expired-callback="recaptcha_expired_callback" data-error-callback="recaptcha_error_callback" data-sitekey="6LdL_CwiAAAAAHQzpu9_jAkj7seqfSt5O3MYFGGT"></div><br/>
+                           
+                                        <button class="btn btn-primary w-25" type="button" id="btnFormSubmit" onclick="index.submitMail()"> 
+                                            Submit
+                                        </button>  
+                                    </div>                             
+                                </form>     
+                            </div>                     
+                    
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-dark mt-5 text-white" data-pg-name="Footer"> 
+            <div class="container"> 
+                <div class="pb-3 pt-3 small"> 
+                    <hr class="border-secondary mt-0"/> 
+                    <div class="align-items-center row">
+                        <div class="col-md pb-2 pt-2">
+                            <p class="mb-0">&copy; 2022 | All Rights Reserved - SysLogMe.ch</p>
+                        </div>
+                        <div class="col-md-auto pb-2 pt-2"><a href="#" class="link-light text-decoration-none">Privacy Policy</a> | <a href="#" class="link-light text-decoration-none">Terms of Use</a>
+                        </div>
+                    </div>                     
+                </div>                 
+            </div>             
+        </footer>
+
+        <!-- Vendor JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2/dist/sweetalert2.all.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/localstorage-slim/dist/localstorage-slim.js"></script> 
+
+        <!-- custom JS    -->
+        <script src="../assets/js/global/common_function.js"></script>
+        <script src="../assets/js/global/server_request.js"></script>
+        <script src="../assets/js/global/client_session.js"></script>
+        <script src="../assets/js/public/index.js"></script>
+
+        <!-- Custom JS Script -->
+        <script>
+            //init navbar
+            commonFunction.loadPublicNavBar();
+
+            //populates the map
+            index.initMap();       
+        </script>       
+    </body>
+</html>

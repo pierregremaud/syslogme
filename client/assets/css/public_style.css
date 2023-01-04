@@ -1,0 +1,171 @@
+@charset "UTF-8"; 
+
+/*
+    WINDBALL PUBLIC STYLE
+*/ 
+
+body {
+    background: #F4F3EF;
+}
+
+/* hides close button on google maps infowindow */
+button.gm-ui-hover-effect {
+    visibility: hidden;
+ }
+
+ /* creates a nice shadow arround cards */
+.card-shadow {
+    box-shadow: 10px 10px 13px 0px rgba(48,33,33,0.43);
+    -webkit-box-shadow: 10px 10px 13px 0px rgba(48,33,33,0.43);
+    -moz-box-shadow: 10px 10px 13px 0px rgba(48,33,33,0.43);
+}
+
+/* ---------------------------------------------------
+    HEADER
+----------------------------------------------------- */
+
+.wb-header {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .wb-header h1,
+    .wb-header .h1 {
+        font-size: 3.0rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wb-header h1,
+    .wb-header .h1 {
+        font-size: 3.5rem;
+    }
+}
+
+/* ---------------------------------------------------
+    WIND_CHART COUNTERS
+----------------------------------------------------- */
+.wb-counter-box {
+    display: block;
+    background: #f6f6f6;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.wb-counter-box.wb-colored-green {
+    background: #3acf87;
+    color: black;
+}
+
+.wb-counter-box.wb-colored-orange {
+    background: #cf823a;
+    color: #fff;
+}
+
+.wb-counter-box.wb-colored-blue {
+    background: #3acfbb;
+    color: #fff;
+}
+
+
+/* ---------------------------------------------------
+    NAVBAR
+----------------------------------------------------- */
+
+#main-nav {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    transition: background-color 1s ease;
+}
+
+#main-nav.navbar-shrink {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    transition: background-color 1s ease;
+}
+
+#main-nav .navbar-nav .nav-item .nav-link {
+    color: #6c757d;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.75rem 0;
+}
+
+#main-nav .navbar-nav .nav-item .nav-link:hover,
+#main-nav .navbar-nav .nav-item .nav-link:active {
+    color: #f4623a;
+}
+
+#main-nav .navbar-nav .nav-item .nav-link.active {
+    color: #f4623a !important;
+}
+
+/* Begin Navbar logo section for small devices */
+#main-nav .navbar-logo {
+    content:url("../img/logo-blue-no-bg-small.png");
+}
+
+#main-nav .navbar-toggler {
+    border-color: black;
+} 
+/* End Navbar logo section for small devices */
+
+@media (min-width: 768px) {
+    #main-nav {
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    /* Begin Navbar logo section for large devices*/
+    #main-nav .navbar-logo {
+        content:url("../img/logo-white-no-bg-extra-small.png");
+    }   
+
+    #main-nav.navbar-shrink .navbar-logo {
+        content:url("../img/logo-blue-no-bg-extra-small.png");
+    }   
+    /* End Navbar logo section for large devices */
+
+    #main-nav .navbar-nav .nav-item .nav-link {
+        color: rgba(255, 255, 255, 1.0);
+        padding: 0 1rem;
+    }
+
+    #main-nav .navbar-nav .nav-item .nav-link:hover {
+        color: #f4623a;
+    }
+
+    #main-nav .navbar-nav .nav-item:last-child .nav-link {
+        padding-right: 0;
+    }
+
+    #main-nav.navbar-shrink {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        background-color: #fff;
+    }
+
+    #main-nav.navbar-shrink .navbar-brand {
+        color: #212529;
+    }
+
+    #main-nav.navbar-shrink .navbar-brand:hover {
+        color: #f4623a;
+    }
+
+    #main-nav.navbar-shrink .navbar-nav .nav-item .nav-link {
+        color: #212529;
+    }
+
+    #main-nav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
+        color: #f4623a;
+    }
+}
+

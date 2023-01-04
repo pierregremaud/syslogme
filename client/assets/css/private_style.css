@@ -1,0 +1,222 @@
+@charset "UTF-8"; 
+
+/*
+    WINDBALL PRIVATE STYLE
+*/ 
+
+body {
+    background: #F4F3EF;
+}
+
+html,body {
+	height: 100%;
+}
+
+p {
+    font-size: 1.0em;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: rgba(7, 7, 7, 0.877);
+}
+
+/* hides close button on google maps infowindow */
+button.gm-ui-hover-effect {
+    visibility: hidden;
+ }
+
+ /* creates a nice shadow arround cards */
+.card.wb-card-shadow {
+    box-shadow: 10px 10px 13px 0px rgba(48,33,33,0.43);
+    -webkit-box-shadow: 10px 10px 13px 0px rgba(48,33,33,0.43);
+    -moz-box-shadow: 10px 10px 13px 0px rgba(48,33,33,0.43);
+}
+
+/* ---------------------------------------------------
+   FORM CONTROL
+----------------------------------------------------- */
+
+.form-label.wb-form-label {
+    font-weight: 500;
+    color: black;
+}
+
+/* ---------------------------------------------------
+   CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: calc(100% - 250px);
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#content.active {
+    width: 100%;
+}
+
+/* Content Small devices */
+@media (max-width: 768px) {
+
+    #content {
+        width: 100%;
+    }
+    #content.active {
+        width: calc(100% - 250px);
+    }
+}
+
+/* ---------------------------------------------------
+   SIDEBAR STYLE
+----------------------------------------------------- */
+
+/* Sidebar Defaults */
+.wb-sidebar {
+    width: 250px;
+    margin-left: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #66615B;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.wb-sidebar.active {
+    margin-left: -250px;
+}
+
+.wb-sidebar-header {
+    padding: 25px;
+    padding-left: 20px;
+    background: #645c53;
+    height: 100px;
+}
+
+.wb-sidebar ul.components {
+    padding: 20px 0;
+    padding-left: 10px;
+}
+
+.wb-sidebar ul li a {
+    color: #fff;
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+.wb-sidebar ul li a:hover {
+    color: rgb(47, 47, 158);
+    background: #797166;
+    font-weight: bold;
+}
+
+.wb-sidebar ul li.active>a {
+    color: orange;
+    background: grey;
+    font-weight: normal;
+}
+
+/* Sidebar Small devices */
+@media (max-width: 768px) {
+
+    .wb-sidebar {
+        margin-left: -250px;
+    }
+
+    .wb-sidebar.active {
+        margin-left: 0px;
+    }
+}
+
+/* ---------------------------------------------------
+  NAVBAR
+----------------------------------------------------- */
+
+/* Navbar Defaults */
+.wb-navbar {
+    padding: 10px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.wb-navbar-span {
+    color: white;
+    font-size: 1.1rem;
+    color: blue;
+}
+
+.wb-nav-link {
+    padding-right: .5rem !important;
+    padding-left: .5rem !important;
+    color:black;
+    font-size: 1.1rem;
+}
+
+.wb-nav-link i {
+    font-size: 1.5rem;
+}
+    
+/* Fixes dropdown menus placed on the right side */
+.ml-auto .dropdown-menu {
+    left: auto !important;
+    right: 0px;
+}
+
+/* Navbar button Large devices */
+#content .bi-arrow-left-circle-fill  {
+    display: block;
+}
+#content .bi-arrow-right-circle-fill  {
+    display: none;
+}
+#content.active .bi-arrow-left-circle-fill  {
+    display: none;
+}
+#content.active .bi-arrow-right-circle-fill  {
+    display: block;
+}    
+
+/* ---------------------------------------------------
+   DASHBOARD COUNTERS
+----------------------------------------------------- */
+
+.wb-counter-box {
+	display: block;
+	background: #f6f6f6;
+	padding: 40px 20px 37px;
+	text-align: center;
+    background: #cf823a;
+}
+
+.wb-counter-box p {
+	margin: 5px 0 0;
+	padding: 0;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 500
+}
+
+.wb-counter-box i {
+	font-size: 60px;
+	margin: 0 0 15px;
+	color: #ffffff;
+}
+
+.wb-counter { 
+	display: block;
+	font-size: 64px;
+	font-weight: 700;
+	color: #ffffff;
+	line-height: 60px;
+    padding-top: 10px
+}
