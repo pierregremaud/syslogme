@@ -62,8 +62,8 @@ You should receive a refresh token from Google
 
 ### 7. Modify config.php to include all parameters
 
-Complete all settings in config.php, especially the settings bellow given as example :
-<br />
+Complete all settings in config.php, especially the settings bellow given as example:
+
 ```
 // MYSQL 
 define('DB_TYPE', 'mysql');
@@ -81,6 +81,7 @@ define('OAUTH_CLIENT_ID', '012345678901-abcdefghijklmnopqrstuvwxyzabcdef.apps.go
 define('OAUTH_SECRET_KEY', 'ABCDEF-1abcdefghijklmnopqrstuvwxyza');  //change this value with the one found in google developpers console
 define('OAUTH_REFRESH_TOKEN', '1//09AbcdefghijKlmnopqrstuvwxyz-L9AbcdefghijKlmnopqrstuvwxyzAbcdefghijKlm-4-6AbcdefghijKlmnopqrstuvwxyz'); //change this value with the one  generated on point 5
 ```
+<br />
 ## Optional : Update PHP dependencies using composer
 <br />
 Make sure that composer is installed
