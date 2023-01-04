@@ -87,7 +87,8 @@ Make sure that composer is installed
 <br />
 Open a command prompt on the local server and navigate to /server directory
 <br />
-Verify that composer.json exist and that it contains 
+Verify that composer.json exist and that it contains
+<br />
 ```
 {
     "require": {
@@ -105,5 +106,5 @@ Verify that composer.json exist and that it contains
     }
 }
 ```
-<br />
+
 run "composer update" from the /server directory
