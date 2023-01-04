@@ -108,4 +108,4 @@ Verify that composer.json exist and that it contains:
 }
 ```
 
-run "composer update" from the /server directory
+run `composer update` from the `/server` directory
