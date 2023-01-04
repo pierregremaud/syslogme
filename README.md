@@ -81,9 +81,9 @@ define('OAUTH_CLIENT_ID', '012345678901-abcdefghijklmnopqrstuvwxyzabcdef.apps.go
 define('OAUTH_SECRET_KEY', 'ABCDEF-1abcdefghijklmnopqrstuvwxyza');  //change this value with the one found in google developpers console
 define('OAUTH_REFRESH_TOKEN', '1//09AbcdefghijKlmnopqrstuvwxyz-L9AbcdefghijKlmnopqrstuvwxyzAbcdefghijKlm-4-6AbcdefghijKlmnopqrstuvwxyz'); //change this value with the one  generated on point 5
 ```
-<br />
+
 ## Optional : Update PHP dependencies using composer
-<br />
+
 Make sure that composer is installed
 <br />
 Open a command prompt on the local server and navigate to /server directory
