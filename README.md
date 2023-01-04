@@ -72,7 +72,7 @@ define('DB_NAME', 'syslogme');      //change this value if needed
 define('DB_CHARSET', 'utf8');
 define('DB_USER', 'root');          //change this value if needed
 define('DB_PASS', 'password');      //change this value if needed
-<br />
+
 // MAIL SYSTEM
 define('MAIL_HOST', 'smtp.gmail.com');
 define('MAIL_PORT', 587);
