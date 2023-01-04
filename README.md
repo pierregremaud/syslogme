@@ -88,8 +88,8 @@ Make sure that composer is installed
 <br />
 Open a command prompt on the local server and navigate to /server directory
 <br />
-Verify that composer.json exist and that it contains
-<br />
+Verify that composer.json exist and that it contains:
+
 ```
 {
     "require": {
