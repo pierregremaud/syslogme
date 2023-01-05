@@ -9,7 +9,7 @@ A Web Site Template with Login, Signup, Account Verification via Google Gmail, P
 All client/server communications made through REST API.
 <br />
 * Bootstrap latest version (5.3.x)
-* Plain vanilla Javascript (no JQuery)
+* Plain Vanilla Javascript (no JQuery)
 * PHP (8.1.0) 
 
 ## Installation
@@ -77,9 +77,9 @@ define('DB_PASS', 'password');      //change this value if needed
 define('MAIL_HOST', 'smtp.gmail.com');
 define('MAIL_PORT', 587);
 define('OAUTH_USER_EMAIL', 'yourmail@gmail.com');  //change this value with the email you used on point 4 to authenticate to google developpers console
-define('OAUTH_CLIENT_ID', '012345678901-abcdefghijklmnopqrstuvwxyzabcdef.apps.googleusercontent.com'); //change this value with the one found in google developpers console
-define('OAUTH_SECRET_KEY', 'ABCDEF-1abcdefghijklmnopqrstuvwxyza');  //change this value with the one found in google developpers console
-define('OAUTH_REFRESH_TOKEN', '1//09AbcdefghijKlmnopqrstuvwxyz-L9AbcdefghijKlmnopqrstuvwxyzAbcdefghijKlm-4-6AbcdefghijKlmnopqrstuvwxyz'); //change this value with the one  generated on point 5
+define('OAUTH_CLIENT_ID', 'your-oauth-client-id.apps.googleusercontent.com'); 	//change this value with the one found in google developpers console
+define('OAUTH_SECRET_KEY', 'your-oauth-secret-key');  				//change this value with the one found in google developpers console
+define('OAUTH_REFRESH_TOKEN', 'your-oauth-refresh-token'); 			//change this value with the one  generated on point 5
 ```
 
 ## Optional : Update PHP dependencies using composer
