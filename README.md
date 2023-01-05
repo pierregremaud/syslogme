@@ -26,8 +26,6 @@ All client/server communications made through REST API.
 
  6. Modify config.php to include all parameters
 
- 7. You are done !!!
-
 ### 1. Clone the repository to local drive
 
 Make sure that a local web server is installed (for example xampp on windows)
