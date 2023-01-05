@@ -60,7 +60,7 @@ Follow instructions provided at point 4 of : https://www.w3jar.com/php-send-emai
 <br />
 You should receive a refresh token from Google
 
-### 7. Modify config.php to include all parameters
+### 6. Modify config.php to include all parameters
 
 Complete all settings in config.php, especially the settings bellow given as example:
 
@@ -86,7 +86,7 @@ define('OAUTH_REFRESH_TOKEN', '1//09AbcdefghijKlmnopqrstuvwxyz-L9AbcdefghijKlmno
 
 Make sure that composer is installed
 <br />
-Open a command prompt on the local server and navigate to /server directory
+Open a command prompt on the local server and navigate to `/server` directory
 <br />
 Verify that composer.json exist and that it contains:
 
