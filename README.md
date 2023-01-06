@@ -6,13 +6,13 @@ PHP Authentication System - Login System
 
 A Web Site Template with Login, Signup, Account Verification via Google Gmail, Password Reset and RememberMe Feature, CSRF Token and more.
 <br />
-No framework used
-<br />
 All client/server communications made through REST API.
 <br />
 * Bootstrap latest version (5.3.x)
 * Plain Vanilla Javascript (no JQuery)
-* PHP (8.1.0) 
+* PHP (8.1.0)
+<br />
+No framework used
 
 ## Installation
 
