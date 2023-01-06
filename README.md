@@ -1,10 +1,12 @@
 # SysLogMe
 
-PHP Authentication System 
+PHP Authentication System - Login System
 
 ## Description
 
-A Web Site Template with Login, Signup, Account Verification via Google Gmail, Password Reset System, Remember Me Feature, CSRF Token and more.
+A Web Site Template with Login, Signup, Account Verification via Google Gmail, Password Reset and RememberMe Feature, CSRF Token and more.
+<br />
+No framework used
 <br />
 All client/server communications made through REST API.
 <br />
